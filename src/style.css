@@ -1,20 +1,20 @@
 @font-face {
     font-family: "MontBold";
-    src: url(./src/fonts/Mont-Bold.ttf);
+    src: url(./Mont-Bold.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MontReg";
-    src: url(./src/fonts/Mont-Regular.ttf);
+    src: url(./Mont-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MontSem";
-    src: url(./src/fonts/Mont-SemiBold.ttf);
+    src: url(./Mont-SemiBold.ttf);
     font-weight: normal;
     font-style: normal;
 }
