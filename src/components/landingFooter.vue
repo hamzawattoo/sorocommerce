@@ -42,7 +42,6 @@
 </template>
 <script setup>
 import Logo from '../assets/Logo.png';
-
 import Link1 from '../assets/Frame 15.png';
 import Link2 from '../assets/Frame 16.png';
 import Link3 from '../assets/Frame 17.png';
