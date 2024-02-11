@@ -18,6 +18,7 @@ import About from "../pages/About.vue";
 import FAQs from "../pages/FAQs.vue";
 import Contactus from "../pages/ContactUs.vue";
 import TermAndCondition from "../pages/TermsAndCondition.vue";
+import ProductCart from "../pages/ProductCart.vue";
 
 const router = createRouter({
     history:createWebHistory(),
@@ -101,6 +102,11 @@ const router = createRouter({
             path:"/contact_us",
             name:"Contactus",
             component:Contactus,
+        },
+        {
+            path:"/product_cart",
+            name:"ProductCart",
+            component:ProductCart,
         },
         {
             path:"/",

@@ -126,38 +126,15 @@
                 </div>
             </form>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 ">
-            <div class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
-                <img class="w-full h-[223px]" :src="Wordpress" alt="">
-                <dt class="text-xl font-bold">Wordpress Plugin</dt>
-                <dt class="text-primary font-bold text-3xl">USDC 19.99</dt>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
-                <img class="w-full h-[223px]" :src="Wordpress" alt="">
-                <dt class="text-xl font-bold">Wordpress Plugin</dt>
-                <dt class="text-primary font-bold text-3xl">USDC 19.99</dt>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
-                <img class="w-full h-[223px]" :src="Wordpress" alt="">
-                <dt class="text-xl font-bold">Wordpress Plugin</dt>
-                <dt class="text-primary font-bold text-3xl">USDC 19.99</dt>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
-                <img class="w-full h-[223px]" :src="Wordpress" alt="">
-                <dt class="text-xl font-bold">Wordpress Plugin</dt>
-                <dt class="text-primary font-bold text-3xl">USDC 19.99</dt>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
-                <img class="w-full h-[223px]" :src="Wordpress" alt="">
-                <dt class="text-xl font-bold">Wordpress Plugin</dt>
-                <dt class="text-primary font-bold text-3xl">USDC 19.99</dt>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
-                <img class="w-full h-[223px]" :src="Wordpress" alt="">
-                <dt class="text-xl font-bold">Wordpress Plugin</dt>
-                <dt class="text-primary font-bold text-3xl">USDC 19.99</dt>
-            </div>
-        </div>
+        <div class=" ">
+   <router-link class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 " to="/product_cart">
+    <div v-for="(plugin, index) in plugins" :key="index" class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
+      <img class="w-full h-[223px]" :src="plugin.image" :alt="plugin.title">
+      <dt class="text-xl font-bold">{{ plugin.title }}</dt>
+      <dt class="text-primary font-bold text-3xl">{{ plugin.price }}</dt>
+    </div>
+   </router-link>
+  </div>
     </div>
     <TransitionRoot as="template" :show="open">
         <Dialog as="div" class="relative z-10" @close="open = false">
@@ -255,4 +232,15 @@ const MobSidebar = () => {
 const isSidebarClose = () => {
     isSidebarOpen.value = false;
 }
+const plugins = ref([
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+
+]);
 </script>
