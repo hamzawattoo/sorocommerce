@@ -11,7 +11,7 @@
             </svg>
         </span>
         <div class="hidden lg:flex items-center justify-between flex-1">
-            <a class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">Explore</a>
+            <router-link to="dashboard" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4">Explore</router-link>
             <a class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">Pricing</a>
             <a class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">Jobs </a>
             <div class="flex items-center justify-between gap-x-4">
