@@ -9,14 +9,14 @@
                     </div>
                     <ul class="space-y-2">
                         <p class="text-black font-bold">Quick Links</p>
-                        <li>About us</li>
-                        <li>Company</li>
-                        <li>Support</li>
+                        <li><router-link to="/about">About us</router-link></li>
+                        <li><router-link to="/faqs">Company</router-link></li>
+                        <li><router-link to="/terms&condition">Support</router-link></li>
                         <li>Connect with us</li>
                     </ul>
                     <ul class="space-y-3">
                         <p class="text-black font-bold">Useful Links</p>
-                        <li>Contact us</li>
+                        <li><router-link to="/contact_us">Contact us</router-link></li>
                         <li>Partner</li>
                         <li>Cookie Preferences</li>
                         <li>Disclaimer</li>

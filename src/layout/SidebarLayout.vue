@@ -279,6 +279,7 @@
                                 </router-link>
 
                                 <!-- Profile dropdown -->
+                               <router-link to="/user_profile" >
                                 <Menu as="div" class="relative">
                                     <MenuButton class="-m-1.5 flex items-center p-1.5">
                                         <span class="sr-only">Open user menu</span>
@@ -314,6 +315,7 @@
                                         </MenuItems>
                                     </transition>
                                 </Menu>
+                               </router-link>
                             </div>
                     </div>
 
