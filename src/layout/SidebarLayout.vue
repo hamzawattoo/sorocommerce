@@ -15,7 +15,7 @@
                 <!-- Sidebar content goes here -->
                 <ul class="space-y-3 mt-12">
                     <li>
-                        <router-link to="/"
+                        <router-link to="/dashboard"
                             class="text-gray-900 hover:text-white font-medium w-full rounded-md px-4 py-2 hover:bg-gradient-to-r from-secondaryblue to-secondarypink flex items-center justify-start gap-2"
                             active-class="text-white font-medium text-base bg-gradient-to-r from-secondaryblue to-secondarypink w-full rounded-md">
                             <span>
@@ -107,7 +107,7 @@
             <!-- Sidebar content goes here -->
             <ul class="space-y-3 mt-12">
                 <li>
-                    <router-link to="/"
+                    <router-link to="/dashboard"
                         class="text-gray-900 hover:text-white font-medium w-full rounded-md px-4 py-2 hover:bg-gradient-to-r from-secondaryblue to-secondarypink flex items-center justify-start gap-2"
                         active-class="text-white font-medium text-base bg-gradient-to-r from-secondaryblue to-secondarypink w-full rounded-md">
                         <span>
