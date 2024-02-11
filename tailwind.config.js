@@ -10,6 +10,7 @@ module.exports = {
         primary: '#C290FF',
         secondaryblue:'#7BD5FF',
         secondarypink:'#C290FF',
+        secondarygreen:'#8DDD71',
       },
       maxWidth: {
         '8xl': '110rem',

@@ -13,6 +13,11 @@ import UserProfile from "../pages/UserProfile.vue";
 import ProductReviews from "../pages/ProductReviews.vue";
 import Drafts from "../pages/Drafts.vue";
 import AddProducts from "../pages/AddProducts.vue";
+import LandingPage from "../pages/Landing.vue";
+import About from "../pages/About.vue";
+import FAQs from "../pages/FAQs.vue";
+import Contactus from "../pages/ContactUs.vue";
+import TermAndCondition from "../pages/TermsAndCondition.vue";
 
 const router = createRouter({
     history:createWebHistory(),
@@ -28,7 +33,7 @@ const router = createRouter({
             component:Signup,
         },
         {
-            path:"/",
+            path:"/dashboard",
             name:"dashboard",
             component:Dashboard,
         },
@@ -76,6 +81,31 @@ const router = createRouter({
             path:"/create_products",
             name:"AddProducts",
             component:AddProducts,
+        },
+        {
+            path:"/about",
+            name:"About",
+            component:About,
+        },
+        {
+            path:"/terms&condition",
+            name:"TermAndCondition",
+            component:TermAndCondition,
+        },
+        {
+            path:"/faqs",
+            name:"FAQs",
+            component:FAQs,
+        },
+        {
+            path:"/contact_us",
+            name:"Contactus",
+            component:Contactus,
+        },
+        {
+            path:"/",
+            name:"LandingPage",
+            component:LandingPage,
         },
         {
             path:"/setting",
