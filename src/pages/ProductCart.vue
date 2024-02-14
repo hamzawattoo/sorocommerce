@@ -111,67 +111,169 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white max-w-sm w-full border border-gray-200 rounded-xl">
-                <div class="bg-primary h-16 w-full px-6 font-medium text-lg text-white rounded-t-xl flex items-center">About
-                </div>
-                <div class="px-6 space-y-6 flex flex-col items-center justify-center py-10">
-                    <h1 class="font-bold text-2xl">$0.00</h1>
-                    <button class="bg-secondarygreen text-white font-medium text-lg px-10 py-2 rounded-md">Buy Now</button>
-                    <div class="flex items-center space-x-4">
-                        <button @click="decrement"
-                            class="px-3 py-1  text-gray-600 hover:bg-gray-300 focus:outline-none text-2xl">-</button>
-                        <input v-model="quantity" type="number"
-                            class=" text-center border border-gray-300 rounded-md focus:outline-none max-w-[100px] pl-8 h-auto"
-                            min="0">
-                        <button @click="increment"
-                            class="px-3 py-1  text-gray-600 hover:bg-gray-300 focus:outline-none text-2xl">+</button>
+            <div class="max-w-sm w-full">
+                <div class="bg-white  border border-gray-200 rounded-xl">
+                    <div class="bg-primary h-16 w-full px-6 font-medium text-lg text-white rounded-t-xl flex items-center">
+                        About
                     </div>
-                    <div v-if="addCoupen" class=" w-full">
-                        <div class="relative">
-                            <label for="name"
-                                class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900">Coupen code</label>
-                            <input type="text" name="name" id="name"
-                                class="bg-white block w-full rounded-md border-0 px-3 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
-                                placeholder="Add Coupen code" />
-                           
+                    <div class="px-6 space-y-6 flex flex-col items-center justify-center py-10">
+                        <h1 class="font-bold text-2xl">$0.00</h1>
+                        <button class="bg-secondarygreen text-white font-medium text-lg px-10 py-2 rounded-md">Buy
+                            Now</button>
+                        <div class="flex items-center space-x-4">
+                            <button @click="decrement"
+                                class="px-3 py-1  text-gray-600 hover:bg-gray-300 focus:outline-none text-2xl">-</button>
+                            <input v-model="quantity" type="number"
+                                class=" text-center border border-gray-300 rounded-md focus:outline-none max-w-[100px] pl-8 h-auto"
+                                min="0">
+                            <button @click="increment"
+                                class="px-3 py-1  text-gray-600 hover:bg-gray-300 focus:outline-none text-2xl">+</button>
                         </div>
-                        <button @click="addingCoupen()" class="text-white font-semibold text-base bg-gradient-to-r from-secondaryblue to-secondarypink py-1.5 px-4 mt-2  rounded-md">
-                            Add
+                        <div v-if="addCoupen" class=" w-full">
+                            <div class="relative">
+                                <label for="name"
+                                    class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900">Coupen
+                                    code</label>
+                                <input type="text" name="name" id="name"
+                                    class="bg-white block w-full rounded-md border-0 px-3 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                                    placeholder="Add Coupen code" />
+
+                            </div>
+                            <button @click="addingCoupen()"
+                                class="text-white font-semibold text-base bg-gradient-to-r from-secondaryblue to-secondarypink py-1.5 px-4 mt-2  rounded-md">
+                                Add
+                            </button>
+                        </div>
+                        <button @click="addingCoupen()" class="text-gray-500 flex items-center justify-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M12.79 21L3 11.21v2c0 .53.21 1.04.59 1.41l7.79 7.79c.78.78 2.05.78 2.83 0l6.21-6.21c.78-.78.78-2.05 0-2.83z" />
+                                <path fill="currentColor"
+                                    d="M11.38 17.41c.78.78 2.05.78 2.83 0l6.21-6.21c.78-.78.78-2.05 0-2.83L12.63.58A2.04 2.04 0 0 0 11.21 0H5C3.9 0 3 .9 3 2v6.21c0 .53.21 1.04.59 1.41zM7.25 3a1.25 1.25 0 1 1 0 2.5a1.25 1.25 0 0 1 0-2.5" />
+                            </svg>
+                            <span>Add Coupen</span>
                         </button>
+                        <div class="w-full border-t  pt-6">
+                            <ul class="space-y-2">
+                                <li class="flex items-center justify-between ">
+                                    <span>Seller</span>
+                                    <span class="font-medium text-blue-900">Fstlye</span>
+                                </li>
+                                <li class="flex items-center justify-between ">
+                                    <span>Stock</span>
+                                    <span class="font-medium text-green-600">10</span>
+                                </li>
+                                <li class="flex items-center justify-between ">
+                                    <span>Feedback</span>
+                                    <span class="font-medium text-red-600">25</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <button @click="addingCoupen()" class="text-gray-500 flex items-center justify-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M12.79 21L3 11.21v2c0 .53.21 1.04.59 1.41l7.79 7.79c.78.78 2.05.78 2.83 0l6.21-6.21c.78-.78.78-2.05 0-2.83z" />
-                            <path fill="currentColor"
-                                d="M11.38 17.41c.78.78 2.05.78 2.83 0l6.21-6.21c.78-.78.78-2.05 0-2.83L12.63.58A2.04 2.04 0 0 0 11.21 0H5C3.9 0 3 .9 3 2v6.21c0 .53.21 1.04.59 1.41zM7.25 3a1.25 1.25 0 1 1 0 2.5a1.25 1.25 0 0 1 0-2.5" />
-                        </svg>
-                        <span>Add Coupen</span>
-                    </button>
-                    <div class="w-full border-t  pt-6">
-                        <ul class="space-y-2">
-                            <li class="flex items-center justify-between ">
-                                <span>Seller</span>
-                                <span class="font-medium text-blue-900">Fstlye</span>
-                            </li>
-                            <li class="flex items-center justify-between ">
-                                <span>Stock</span>
-                                <span class="font-medium text-green-600">10</span>
-                            </li>
-                            <li class="flex items-center justify-between ">
-                                <span>Feedback</span>
-                                <span class="font-medium text-red-600">25</span>
-                            </li>
-                        </ul>
-                    </div>
+
+                </div>
+                <div class="w-full flex items-end justify-end py-4">
+                    <button @click="open = true"
+                        class="text-white font-semibold text-base bg-gradient-to-r from-secondaryblue to-secondarypink py-3 w-full text-center rounded-xl flex items-center justify-center gap-x-3 px-5">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </span>
+                        Create a Query</button>
                 </div>
             </div>
         </div>
+
+        <TransitionRoot as="template" :show="open">
+            <Dialog as="div" class="relative z-50" @close="open = false">
+                <TransitionChild as="template" enter="ease-out duration-300" enter-from="opacity-0" enter-to="opacity-100"
+                    leave="ease-in duration-200" leave-from="opacity-100" leave-to="opacity-0">
+                    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+                </TransitionChild>
+
+                <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+                    <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                        <TransitionChild as="template" enter="ease-out duration-300"
+                            enter-from="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                            enter-to="opacity-100 translate-y-0 sm:scale-100" leave="ease-in duration-200"
+                            leave-from="opacity-100 translate-y-0 sm:scale-100"
+                            leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                            <DialogPanel
+                                class="relative transform overflow-hidden rounded-3xl bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-14">
+                                <button @click="open = false" class="absolute top-3 right-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </button>    
+                                <div class="space-y-6">
+                                    <h1 class="heading !text-4xl text-center">
+                                        Create a Query
+                                    </h1>
+                                    <div class="relative">
+                                        <label for="name"
+                                            class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-500">Subject</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-white block w-full rounded-md border-0 px-3 py-2.5 text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                                            placeholder="Write subject" />
+                                    </div>
+                                    <div class="relative">
+                                        <label for="name"
+                                            class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-500">Email</label>
+                                        <input type="text" name="name" id="name"
+                                            class="bg-white block w-full rounded-md border-0 px-3 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-xs sm:leading-6"
+                                            placeholder="Write email" />
+                                    </div>
+                                    <div class="relative">
+                                        <label for="name"
+                                            class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-500">Message</label>
+                                        <textarea type="text" name="name" id="name"
+                                            class="bg-white block w-full rounded-md border-0 px-3 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
+                                            placeholder="Write a message"></textarea>
+                                    </div>
+                                    <div class="col-span-full">
+                                        <label for="cover-photo"
+                                            class="block text-sm font-medium leading-6 text-gray-900"></label>
+                                        <div
+                                            class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+                                            <div class="text-center">
+                                                <PhotoIcon class="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
+                                                <div class="mt-4 flex text-sm leading-6 text-gray-600">
+                                                    <label for="file-upload"
+                                                        class="relative cursor-pointer rounded-md bg-white font-semibold text-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-primary-600 focus-within:ring-offset-2 hover:text-primary">
+                                                        <span>Upload a file</span>
+                                                        <input id="file-upload" name="file-upload" type="file"
+                                                            class="sr-only" />
+                                                    </label>
+                                                    <p class="pl-1">or drag and drop</p>
+                                                </div>
+                                                <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="mt-5 sm:mt-6 max-w-[200px]">
+                                    <button
+                                        class="text-white font-semibold text-base bg-gradient-to-r from-secondaryblue to-secondarypink py-3.5 w-full rounded-xl">Submit</button>
+                                </div>
+                            </DialogPanel>
+                        </TransitionChild>
+                    </div>
+                </div>
+            </Dialog>
+        </TransitionRoot>
     </div>
 </template>
 <script setup>
 import Logo from '../assets/Logo.png';
 import { ref } from 'vue';
+import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
+import { CheckIcon } from '@heroicons/vue/24/outline'
+const open = ref(false)
 
 const quantity = ref(0);
 const addCoupen = ref(false);
@@ -180,7 +282,7 @@ const increment = () => {
 };
 const addingCoupen = () => {
     addCoupen.value = !addCoupen.value;
-};  
+};
 const decrement = () => {
     if (quantity.value > 0) {
         quantity.value--;

@@ -12,8 +12,8 @@
         </span>
         <div class="hidden lg:flex items-center justify-between flex-1">
             <router-link to="/dashboard" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4">Explore</router-link>
-            <a class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">Pricing</a>
-            <a class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">Jobs </a>
+            <router-link to="/about" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">About Us</router-link>
+            <router-link to="/contact_us" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">Contact Us </router-link>
             <div class="flex items-center justify-between gap-x-4">
                 <router-link to="signin"
                     class="whitespace-nowrap text-center text-black shadow-lg font-semibold text-base bg-white py-3  rounded-xl flex items-center justify-center gap-x-3 px-16 hover:bg-gradient-to-r from-secondaryblue to-secondarypink  hover:text-white">

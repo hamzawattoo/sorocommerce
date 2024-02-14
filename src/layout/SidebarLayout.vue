@@ -103,9 +103,9 @@
 
         <!-- Desktop Sidebar -->
         <div class="bg-white text-white hidden lg:block flex-none px-4 drop-shadow-md sticky top-0 h-screen max-w-64 2xl:max-w-full">
-            <img :src="Logo" alt="Logo" class="hidden md:block px-4 py-12 mx-auto">
+            <img :src="Logo" alt="Logo" class="hidden md:block px-4 py-2 mx-auto">
             <!-- Sidebar content goes here -->
-            <ul class="space-y-3 mt-12">
+            <ul class="space-y-3 mt-24">
                 <li>
                     <router-link to="/dashboard"
                         class="text-gray-900 hover:text-white font-medium w-full rounded-md px-4 py-2 hover:bg-gradient-to-r from-secondaryblue to-secondarypink flex items-center justify-start gap-2"
@@ -277,17 +277,17 @@
                                         <p class="font-medium">You have Received <a class="text-primary" href="">2 Queries</a></p>
                                     </div>
                                 </router-link>
-
-                                <!-- Profile dropdown -->
-                               <router-link to="/user_profile" >
-                                <Menu as="div" class="relative">
+                                
+                            <!-- Profile dropdown -->
+                               <!-- <router-link to="/user_profile" > -->
+                                <Menu @click="walletAddressBtn"  as="div" class="relative cursor-pointer">
                                     <MenuButton class="-m-1.5 flex items-center p-1.5">
                                         <span class="sr-only">Open user menu</span>
                                         <img class="h-10 w-10 rounded-full bg-gray-50"
                                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                             alt="" />
                                         <div class="flex flex-col ml-4">
-                                            <span class="text-gray-400 text-xs font-medium">Welcom</span>
+                                            
                                             <span class="hidden lg:flex lg:items-center gap-4">
                                                 <span class="text-sm font-semibold text-gray-900" aria-hidden="true">John
                                                     Smith</span>
@@ -299,23 +299,20 @@
                                             </span>
                                         </div>
                                     </MenuButton>
-                                    <transition enter-active-class="transition ease-out duration-100"
+                                    <transition v-if="walletAddressModal" enter-active-class="transition ease-out duration-100"
                                         enter-from-class="transform opacity-0 scale-95"
                                         enter-to-class="transform opacity-100 scale-100"
                                         leave-active-class="transition ease-in duration-75"
                                         leave-from-class="transform opacity-100 scale-100"
                                         leave-to-class="transform opacity-0 scale-95">
                                         <MenuItems
-                                            class="hidden absolute right-0 z-10 mt-2.5 w-32 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
-                                            <MenuItem v-for="item in userNavigation" :key="item.name" v-slot="{ active }">
-                                            <a :href="item.href"
-                                                :class="[active ? 'bg-gray-50' : '', 'block px-3 py-1 text-sm leading-6 text-gray-900']">{{
-                                                    item.name }}</a>
-                                            </MenuItem>
+                                            class=" absolute right-0 z-10 mt-2.5 w-auto px-4 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
+                                           <h1 class="font-medium">Wallet address:</h1>
+                                            <p class="text-sm text-gray-500">WAUUDB67VGVS6VSS6SBHS66NNSUES</p>
                                         </MenuItems>
                                     </transition>
                                 </Menu>
-                               </router-link>
+                               <!-- </router-link> -->
                             </div>
                     </div>
 
@@ -340,7 +337,10 @@ import { ref } from 'vue';
 
 const isSidebarOpen = ref(false);
 const isNotification = ref(false);
- 
+const walletAddressModal = ref(false);
+ const walletAddressBtn = () =>{
+    walletAddressModal.value = !walletAddressModal.value;
+ }
 const isNotificationBtn = () =>{
     isNotification.value = !isNotification.value;
 }

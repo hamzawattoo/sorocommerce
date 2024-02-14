@@ -12,8 +12,7 @@
         </button>
       </div>
       <div class="md:col-span-4 bg-white rounded-xl shadow p-6">
-        <div v-if="activeTab === 0" class=""></div>
-        <div v-if="activeTab === 1" class="">
+        <div v-if="activeTab === 0" class="">
           <h1 class="heading">Users</h1>
           <div class="space-y-6 grid grid-cols-1 md:gris-cols-2">
             <span class="md:col-span-2">
@@ -58,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div v-if="activeTab === 2" class="mt-4 space-y-6">
+        <div v-if="activeTab === 1" class="mt-4 space-y-6">
           <p class="font-semibold text-lg mb-6 text-gray-900">Security</p>
 
           <div class="md:col-span-2">
@@ -110,7 +109,7 @@
             </div>
           </div>
         </div>
-        <div v-if="activeTab === 3" class="mt-4 grid md:grid-cols-2 gap-5">
+        <div v-if="activeTab === 2" class="mt-4 grid md:grid-cols-2 gap-5">
           <div class="">
             <p class="font-semibold text-lg mb-6 text-gray-900">Security</p>
             <div class="relative">
@@ -130,15 +129,14 @@
             <p class="font-bold text-lg mb-6 text-gray-900 text-center max-w-xs mx-auto">Please Connect Your Account to Wallet</p>
             <div class="relative">
               <label for=""
-                class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600">Choose your
-                Wallet</label>
+                class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600">Connect your Frighter Wallet</label>
               <div
                 class=" w-full rounded-xl border px-3 py-2.5 text-gray-900 shadow-sm placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6 flex">
                 <div class="px-2 py-4 w-full">
-                  <p class="flex items-center gap-3 text-lg font-normal hover:bg-blue-50 px-4 py-2 rounded-lg"><img class="h-7 w-7 object-contain" :src="Wallet3" alt=""> Rabet</p>
-                  <p class="flex items-center gap-3 text-lg font-normal hover:bg-blue-50 px-4 py-2 rounded-lg"><img class="h-8 w-8 object-contain" :src="Wallet2" alt=""> Frighter</p>
-                  <p class="flex items-center gap-3 text-lg font-normal hover:bg-blue-50 px-4 py-2 rounded-lg"><img class="h-8 w-8 object-contain" :src="Wallet4" alt=""> Albedo</p>
-                  <p class="flex items-center gap-3 text-lg font-normal hover:bg-blue-50 px-4 py-2 rounded-lg"><img class="h-8 w-8 object-contain" :src="Wallet1" alt=""> Xbull</p>
+                  <!-- <p class="flex items-center gap-3 text-lg font-normal hover:bg-blue-50 px-4 py-2 rounded-lg"><img class="h-7 w-7 object-contain" :src="Wallet3" alt=""> Rabet</p> -->
+                  <router-link to="" class="flex items-center gap-3 text-lg font-normal bg-blue-50 px-4 py-2 rounded-lg"><img class="h-8 w-8 object-contain" :src="Wallet2" alt=""> Frighter</router-link>
+                  <!-- <p class="flex items-center gap-3 text-lg font-normal hover:bg-blue-50 px-4 py-2 rounded-lg"><img class="h-8 w-8 object-contain" :src="Wallet4" alt=""> Albedo</p>
+                  <p class="flex items-center gap-3 text-lg font-normal hover:bg-blue-50 px-4 py-2 rounded-lg"><img class="h-8 w-8 object-contain" :src="Wallet1" alt=""> Xbull</p> -->
                 </div>
               </div>
             </div>
@@ -160,6 +158,6 @@ import Wallet2 from "../assets/image 26.png";
 import Wallet3 from "../assets/PmIHK-cv_400x400 1 (1).png";
 import Wallet4 from "../assets/wallet.png";
 
-const tabs = ["Account", "General", "Security", "Payments"];
+const tabs = ["General", "Security", "Payments"];
 const activeTab = ref(0);
 </script>
