@@ -102,7 +102,8 @@
         </div>
 
         <!-- Desktop Sidebar -->
-        <div class="bg-white text-white hidden lg:block flex-none px-4 drop-shadow-md sticky top-0 h-screen max-w-64 2xl:max-w-full">
+        <div
+            class="bg-white text-white hidden lg:block flex-none px-4 drop-shadow-md sticky top-0 h-screen max-w-64 2xl:max-w-full">
             <img :src="Logo" alt="Logo" class="hidden md:block px-4 py-2 mx-auto">
             <!-- Sidebar content goes here -->
             <ul class="space-y-3 mt-24">
@@ -243,77 +244,89 @@
                             </div>
 
                         </form>
-                            <div class="flex items-center justify-end sm:justify-normal w-full sm:w-auto gap-x-4 lg:gap-x-4 relative">
-                                <button @click="isNotificationBtn" type="button" class="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
-                                    <span class="sr-only">View notifications</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="34" viewBox="0 0 32 34"
-                                        fill="none">
-                                        <path
-                                            d="M14.0849 5.41765C16.5278 5.41765 18.8705 6.28021 20.5978 7.8156C22.3251 9.35097 23.2954 11.4334 23.2954 13.6048C23.2954 16.9634 24.0546 19.4783 25.0391 21.3278C26.2969 23.6908 26.9257 24.8723 26.8908 25.1421C26.85 25.4571 26.798 25.5438 26.5391 25.7277C26.3172 25.8854 25.2134 25.8854 23.0058 25.8854H5.16398C2.95639 25.8854 1.85262 25.8854 1.63073 25.7277C1.3719 25.5438 1.31989 25.4571 1.27909 25.1421C1.24411 24.8723 1.873 23.6908 3.1308 21.3278C4.11525 19.4783 4.87441 16.9634 4.87441 13.6048C4.87441 11.4334 5.84481 9.35097 7.5721 7.8156C9.29941 6.28021 11.6421 5.41765 14.0849 5.41765ZM14.0849 5.41765V2.00635M9.57177 31.0024C10.7763 32.0655 12.3586 32.7108 14.0918 32.7108C15.8247 32.7108 17.407 32.0655 18.6117 31.0024"
-                                            stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <circle cx="23.0019" cy="9.42865" r="7.91696" fill="#FFB545" stroke="#F3F1FF"
-                                            stroke-width="2" />
-                                        <path
-                                            d="M23.2692 11.7096H25.7067V13.3209H20.111V12.9459C21.2556 11.6256 22.0739 10.6568 22.5661 10.0396C23.0583 9.42245 23.3903 8.95175 23.5622 8.62753C23.738 8.30331 23.8259 7.99472 23.8259 7.70175C23.8259 7.42441 23.7399 7.20175 23.5681 7.03378C23.4001 6.86191 23.1813 6.77597 22.9118 6.77597C22.6306 6.77597 22.404 6.86386 22.2321 7.03964C22.0641 7.21152 21.9802 7.44003 21.9802 7.72519V7.87753H20.2634V7.70175C20.2634 6.95956 20.5016 6.3541 20.9782 5.88535C21.4587 5.41269 22.0934 5.17636 22.8825 5.17636C23.6677 5.17636 24.3083 5.41074 24.8044 5.87949C25.3044 6.34824 25.5544 6.9498 25.5544 7.68417C25.5544 8.19589 25.3981 8.73495 25.0856 9.30136C24.7731 9.86386 24.1677 10.6666 23.2692 11.7096Z"
-                                            fill="white" />
-                                    </svg>
-                                </button>
-                                <router-link to="/notification" v-if="isNotification" class="border rounded-lg bg-white px-4 py-2 absolute right-20 top-20 shadow-md z-50 w-96">
-                                    <div class="flex items-center justify-between border-b py-2">
-                                        <p class="font-semibold text-md text-gray-900">Notifications</p>
-                                        <a href="" class="text-sm text-gray-400 font-medium">Mark all as read</a>
-                                    </div>
-                                    <div class="flex items-center justify-start gap-3 border-b py-2">
-                                        <img :src="notificationLogo" alt="">
-                                        <p class="font-medium">You have Received <a class="text-primary" href="">2 Queries</a></p>
-                                    </div>
-                                    <div class="flex items-center justify-start gap-3 border-b py-2">
-                                        <img :src="notificationLogo" alt="">
-                                        <p class="font-medium">You have Received <a class="text-primary" href="">2 Queries</a></p>
-                                    </div>
-                                    <div class="flex items-center justify-start gap-3 border-b py-2">
-                                        <img :src="notificationLogo" alt="">
-                                        <p class="font-medium">You have Received <a class="text-primary" href="">2 Queries</a></p>
-                                    </div>
-                                </router-link>
-                                
+                        <div
+                            class="flex items-center justify-end sm:justify-normal w-full sm:w-auto gap-x-4 lg:gap-x-4 relative">
+                            <button @click="isNotificationBtn" type="button"
+                                class="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
+                                <span class="sr-only">View notifications</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="34" viewBox="0 0 32 34"
+                                    fill="none">
+                                    <path
+                                        d="M14.0849 5.41765C16.5278 5.41765 18.8705 6.28021 20.5978 7.8156C22.3251 9.35097 23.2954 11.4334 23.2954 13.6048C23.2954 16.9634 24.0546 19.4783 25.0391 21.3278C26.2969 23.6908 26.9257 24.8723 26.8908 25.1421C26.85 25.4571 26.798 25.5438 26.5391 25.7277C26.3172 25.8854 25.2134 25.8854 23.0058 25.8854H5.16398C2.95639 25.8854 1.85262 25.8854 1.63073 25.7277C1.3719 25.5438 1.31989 25.4571 1.27909 25.1421C1.24411 24.8723 1.873 23.6908 3.1308 21.3278C4.11525 19.4783 4.87441 16.9634 4.87441 13.6048C4.87441 11.4334 5.84481 9.35097 7.5721 7.8156C9.29941 6.28021 11.6421 5.41765 14.0849 5.41765ZM14.0849 5.41765V2.00635M9.57177 31.0024C10.7763 32.0655 12.3586 32.7108 14.0918 32.7108C15.8247 32.7108 17.407 32.0655 18.6117 31.0024"
+                                        stroke="black" stroke-opacity="0.5" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle cx="23.0019" cy="9.42865" r="7.91696" fill="#FFB545" stroke="#F3F1FF"
+                                        stroke-width="2" />
+                                    <path
+                                        d="M23.2692 11.7096H25.7067V13.3209H20.111V12.9459C21.2556 11.6256 22.0739 10.6568 22.5661 10.0396C23.0583 9.42245 23.3903 8.95175 23.5622 8.62753C23.738 8.30331 23.8259 7.99472 23.8259 7.70175C23.8259 7.42441 23.7399 7.20175 23.5681 7.03378C23.4001 6.86191 23.1813 6.77597 22.9118 6.77597C22.6306 6.77597 22.404 6.86386 22.2321 7.03964C22.0641 7.21152 21.9802 7.44003 21.9802 7.72519V7.87753H20.2634V7.70175C20.2634 6.95956 20.5016 6.3541 20.9782 5.88535C21.4587 5.41269 22.0934 5.17636 22.8825 5.17636C23.6677 5.17636 24.3083 5.41074 24.8044 5.87949C25.3044 6.34824 25.5544 6.9498 25.5544 7.68417C25.5544 8.19589 25.3981 8.73495 25.0856 9.30136C24.7731 9.86386 24.1677 10.6666 23.2692 11.7096Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <router-link to="/notification" v-if="isNotification"
+                                class="border rounded-lg bg-white px-4 py-2 absolute right-20 top-20 shadow-md z-50 w-96">
+                                <div class="flex items-center justify-between border-b py-2">
+                                    <p class="font-semibold text-md text-gray-900">Notifications</p>
+                                    <a href="" class="text-sm text-gray-400 font-medium">Mark all as read</a>
+                                </div>
+                                <div class="flex items-center justify-start gap-3 border-b py-2">
+                                    <img :src="notificationLogo" alt="">
+                                    <p class="font-medium">You have Received <a class="text-primary" href="">2 Queries</a>
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-start gap-3 border-b py-2">
+                                    <img :src="notificationLogo" alt="">
+                                    <p class="font-medium">You have Received <a class="text-primary" href="">2 Queries</a>
+                                    </p>
+                                </div>
+                                <div class="flex items-center justify-start gap-3 border-b py-2">
+                                    <img :src="notificationLogo" alt="">
+                                    <p class="font-medium">You have Received <a class="text-primary" href="">2 Queries</a>
+                                    </p>
+                                </div>
+                            </router-link>
+
                             <!-- Profile dropdown -->
-                               <!-- <router-link to="/user_profile" > -->
-                                <Menu @click="walletAddressBtn"  as="div" class="relative cursor-pointer">
-                                    <MenuButton class="-m-1.5 flex items-center p-1.5">
-                                        <span class="sr-only">Open user menu</span>
+                            <Menu as="div" class="relative cursor-pointer">
+                                <MenuButton class="-m-1.5 flex items-center p-1.5">
+                                    <span class="sr-only">Open user menu</span>
+                                    <router-link to="/user_profile">
+
                                         <img class="h-10 w-10 rounded-full bg-gray-50"
                                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                             alt="" />
-                                        <div class="flex flex-col ml-4">
-                                            
-                                            <span class="hidden lg:flex lg:items-center gap-4">
-                                                <span class="text-sm font-semibold text-gray-900" aria-hidden="true">John
-                                                    Smith</span>
+                                    </router-link>
+
+                                    <div class="flex flex-col ml-4">
+
+                                        <span class="hidden lg:flex lg:items-center gap-4">
+                                            <span class="text-sm font-semibold text-gray-900" aria-hidden="true">John
+                                                Smith</span>
+                                            <button @click="walletAddressBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                                     stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                                                 </svg>
-                                            </span>
-                                        </div>
-                                    </MenuButton>
-                                    <transition v-if="walletAddressModal" enter-active-class="transition ease-out duration-100"
-                                        enter-from-class="transform opacity-0 scale-95"
-                                        enter-to-class="transform opacity-100 scale-100"
-                                        leave-active-class="transition ease-in duration-75"
-                                        leave-from-class="transform opacity-100 scale-100"
-                                        leave-to-class="transform opacity-0 scale-95">
-                                        <MenuItems
-                                            class=" absolute right-0 z-10 mt-2.5 w-auto px-4 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
-                                           <h1 class="font-medium">Wallet address:</h1>
-                                            <p class="text-sm text-gray-500">WAUUDB67VGVS6VSS6SBHS66NNSUES</p>
-                                        </MenuItems>
-                                    </transition>
-                                </Menu>
-                               <!-- </router-link> -->
-                            </div>
+                                            </button>
+                                           
+                                        </span>
+                                    </div>
+                                </MenuButton>
+                                <transition v-if="walletAddressModal" enter-active-class="transition ease-out duration-100"
+                                    enter-from-class="transform opacity-0 scale-95"
+                                    enter-to-class="transform opacity-100 scale-100"
+                                    leave-active-class="transition ease-in duration-75"
+                                    leave-from-class="transform opacity-100 scale-100"
+                                    leave-to-class="transform opacity-0 scale-95">
+                                    <MenuItems
+                                        class=" absolute right-0 z-10 mt-2.5 w-auto px-4 origin-top-right rounded-md bg-white py-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
+                                        <h1 class="font-medium">Wallet address:</h1>
+                                        <p class="text-sm text-gray-500">WAUUDB67VGVS6VSS6SBHS66NNSUES</p>
+                                    </MenuItems>
+                                </transition>
+                            </Menu>
+
+                        </div>
                     </div>
 
                 </div>
@@ -338,10 +351,10 @@ import { ref } from 'vue';
 const isSidebarOpen = ref(false);
 const isNotification = ref(false);
 const walletAddressModal = ref(false);
- const walletAddressBtn = () =>{
+const walletAddressBtn = () => {
     walletAddressModal.value = !walletAddressModal.value;
- }
-const isNotificationBtn = () =>{
+}
+const isNotificationBtn = () => {
     isNotification.value = !isNotification.value;
 }
 

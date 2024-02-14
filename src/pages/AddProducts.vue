@@ -143,7 +143,7 @@
         </div>
         <div v-if="consultationBasedCategories.includes(selected.name)" class="relative">
           <label for="name"
-            class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600 z-50">Number of
+            class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600">Number of
             Sessions</label>
           <input type="number" placeholder="0"
             class="bg-white block w-full rounded-md border-0 px-3 py-3.5 text-gray-400 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none sm:leading-6 text-start" />
