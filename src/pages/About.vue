@@ -12,13 +12,12 @@
     <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-20 gap-12">
         <div class="space-y-6">
             <div class="h-1  bg-gradient-to-r from-secondaryblue to-secondarypink w-24 my-3 "></div>
-            <h1 class="text-3xl md:text-5xl font-bold">A Decentralized Freelancing Marketplace Powered by Soroban Blockchain
+            <h1 class="text-3xl md:text-5xl font-bold">Revolutionizing Freelancing with Soroban's Blockchain
             </h1>
-            <p class="text-md font-medium">It is a long established fact that a reader will be distracted by the readable
-                content of a page when looking at its layout.
-
-                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                using 'Content here, content here.</p>
+            <p class="text-md font-medium">Discover Sorocommerce, where the Soroban blockchain elevates freelancing with secure,
+transparent, and efficient solutions. Embrace the future of work with fast, fair, and
+decentralized transactions tailored for the digital age. Join our community and lead the
+charge in the new era of freelancing</p>
             <h1 class="text-3xl font-bold">For Freelancers:</h1>
             <div class="grid grid-cols-1 gap-4">
                 <div class="flex items-center gap-3">
@@ -33,21 +32,21 @@
                         <input id="comments" checked aria-describedby="comments-description" name="comments" type="checkbox"
                             class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                     </div>
-                    <label class="font-medium text-lg whitespace-nowrap" for="">Transparent transactions</label>
+                    <label class="font-medium text-lg whitespace-nowrap" for="">Full Transparency</label>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex h-6 items-center">
                         <input id="comments" checked aria-describedby="comments-description" name="comments" type="checkbox"
                             class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                     </div>
-                    <label class="font-medium text-lg whitespace-nowrap" for="">Reduced risk of fraud</label>
+                    <label class="font-medium text-lg whitespace-nowrap" for="">Streamlined Solutions</label>
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="flex h-6 items-center">
                         <input id="comments" checked aria-describedby="comments-description" name="comments" type="checkbox"
                             class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                     </div>
-                    <label class="font-medium text-lg whitespace-nowrap" for="">Automated dispute resolution</label>
+                    <label class="font-medium text-lg whitespace-nowrap" for="">Quick Setup</label>
                 </div>
             </div>
         </div>
@@ -126,8 +125,8 @@
                     Sorocommerce - Your Trusted Platform
                 </h1>
                 <p class="text-center">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout.
+                    Unleash your potential with Sorocommerce, where blockchain reliability meets a vibrant freelance
+marketplace.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10">
@@ -136,12 +135,10 @@
                         <img class="w-36 h-36 rounded-full absolute -top-14 shadow-xl object-cover" :src="profile" alt="">
                     </div>
                     <h1 class="text-2xl font-bold mt-16">Grayson Mason</h1>
-                    <p class="text-gray-500 text-xl">Mason Carter</p>
+                    <p class="text-gray-500 text-lg">Founder, Mason Design Studio</p>
                     <dt class="text-gray-500 mt-3">
-                        It is a long established fact that a reader will be distracted by the content of a page when looking
-                        at its layout. It is long established fact that a reader will be distracted by the It is a long
-                        established fact that a reader will be distracted by the content of a page when looking at its
-                        layout.
+                        As the Creative Director at Mason Design Studio, Sorocommerce has been instrumental in
+streamlining our project management and client billing with absolute precision and trust.
                     </dt>
                 </div>
 
@@ -150,12 +147,10 @@
                         <img class="w-36 h-36 rounded-full absolute -top-14 shadow-xl object-cover" src="https://plus.unsplash.com/premium_photo-1664870883044-0d82e3d63d99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="">
                     </div>
                     <h1 class="text-2xl font-bold mt-16">Mason Carter</h1>
-                    <p class="text-gray-500 text-xl">Mason Carter</p>
+                    <p class="text-gray-500 text-lg">CTO, Carter Tech Innovations</p>
                     <dt class="text-gray-500 mt-3">
-                        It is a long established fact that a reader will be distracted by the content of a page when looking
-                        at its layout. It is long established fact that a reader will be distracted by the It is a long
-                        established fact that a reader will be distracted by the content of a page when looking at its
-                        layout.
+                        I've found Sorocommerce's blockchain platform to be the backbone of our secure and
+transparent transactional operations.
                     </dt>
                 </div>
 
@@ -164,12 +159,10 @@
                         <img class="w-36 h-36 rounded-full absolute -top-14 shadow-xl object-cover" src="https://plus.unsplash.com/premium_photo-1675034393381-7e246fc40755?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D" alt="">
                     </div>
                     <h1 class="text-2xl font-bold mt-16">Harper Jack</h1>
-                    <p class="text-gray-500 text-xl">Mason Carter</p>
+                    <p class="text-gray-500 text-lg">CEO, Jack & Co. Branding Agency</p>
                     <dt class="text-gray-500 mt-3">
-                        It is a long established fact that a reader will be distracted by the content of a page when looking
-                        at its layout. It is long established fact that a reader will be distracted by the It is a long
-                        established fact that a reader will be distracted by the content of a page when looking at its
-                        layout.
+                        Leading Jack & Co. Branding Agency, Sorocommerce has empowered us with quick, reliable
+payments and a supportive network, enhancing our market agility.
                     </dt>
                 </div>
 

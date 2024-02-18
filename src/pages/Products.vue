@@ -109,9 +109,9 @@ import { ref } from "vue";
 import { RouterLink } from "vue-router";
 
 const people = [
-    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'Dynamic',stock:0 },
-    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'Dynamic',stock:0 },
-    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'Dynamic',stock:0 },
-    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'Dynamic',stock:0 },
+    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'Digital service',stock:0 },
+    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'software and tools',stock:0 },
+    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'data services',stock:0 },
+    { product: 'High-Quality SEO Content Writing Service ($1 for 1000 words) gTAZGbf', price: '0.005$', conversion: '6%', type: 'software & tools',stock:0 },
 ]
 </script>

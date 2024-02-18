@@ -56,8 +56,8 @@
               <select id="country" name="country" autocomplete="country"
                 class="h-full rounded-md border-0 bg-transparent py-0 pl-3 pr-10 text-gray-500 sm:text-sm  focus:ring-0 font-medium">
                 <option>USDC</option>
-                <option>CA</option>
-                <option>EU</option>
+                <option>XLM</option>
+                <option>EURT</option>
               </select>
             </div>
             <input type="text" name="phone-number" id="phone-number"

@@ -44,7 +44,7 @@
                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                             alt="" />
                         <div class="flex flex-col ml-4">
-                            <span class="text-gray-400 text-xs font-medium">Welcom</span>
+                            
                             <span class="hidden lg:flex lg:items-center gap-4">
                                 <span class="text-sm font-semibold text-gray-900" aria-hidden="true">John
                                     Smith</span>
@@ -126,10 +126,10 @@
                 </div>
             </form>
         </div>
-        <div class=" ">
+        <div class="">
    <router-link class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 " to="/product_cart">
     <div v-for="(plugin, index) in plugins" :key="index" class="bg-white p-4 rounded-lg shadow flex flex-col items-start justify-center space-y-2">
-      <img class="w-full h-[223px]" :src="plugin.image" :alt="plugin.title">
+      <img class="w-full h-[223px] rounded-xl shadow" :src="plugin.image" :alt="plugin.title">
       <dt class="text-xl font-bold">{{ plugin.title }}</dt>
       <dt class="text-primary font-bold text-3xl">{{ plugin.price }}</dt>
     </div>
@@ -233,14 +233,14 @@ const isSidebarClose = () => {
     isSidebarOpen.value = false;
 }
 const plugins = ref([
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
-  { title: 'Wordpress Plugin', price: 'USDC 19.99', image: Wordpress },
+  { title: 'SEO Booster Pro for WordPress', price: ' USD 29.99', image: 'https://www.weareinfront.com/wp-content/uploads/2021/07/AdobeStock_314883773-1400x800.jpg' },
+  { title: 'WP Ultimate Security Checker', price: 'USDC 34.99', image: 'https://indexsy.com/wp-content/uploads/2023/06/how-to-measure-site-speed.png' },
+  { title: 'NextGen Site Speed Optimizer', price: 'USDC 24.99', image: 'https://indexsy.com/wp-content/uploads/2023/06/how-to-measure-site-speed.png' },
+  { title: 'WP Smart Backup & Restore', price: 'USDC 19.99', image: 'https://solutionsreview.com/security-information-event-management/files/2015/09/Databank.jpg' },
+  { title: ' E-Commerce Wizard for WP Shops', price: 'USDC 39.99', image: 'https://co-well.vn/wp-content/uploads/2019/10/ecommerce-shopping-cart.jpg' },
+  { title: 'Responsive Design Architect Plugin', price: 'USDC 27.99', image: 'https://www.techdonut.co.uk/sites/default/files/make-your-website-smart-phone-friendly_288954242_0.jpg' },
+  { title: 'WP Multilingual Converter Tool', price: 'USDC 22.99', image: 'https://www.greengeeks.com/support/wp-content/uploads/2016/02/translations-plugins.jpg' },
+  { title: 'Dynamic Form Builder Suite', price: 'USDC 31.99', image: 'https://handsontek.net/images/Lists/Customize%20forms/hero.png' },
 
 ]);
 </script>

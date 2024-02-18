@@ -3,7 +3,8 @@
         <LandingNav />
         <section class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-20 gap-12">
             <div class="space-y-6">
-                <h1 class="text-3xl md:text-5xl font-bold">Creativity Soroban’s Global Talent Pool</h1>
+                <h1 class="text-3xl md:text-5xl font-bold">Welcome to Sorocommerce, where creativity meets innovation on the
+                    Soroban blockchain.</h1>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div class="flex items-center gap-3">
                         <div class="flex h-6 items-center">
@@ -19,7 +20,7 @@
                                 type="checkbox"
                                 class="h-4 w-4 rounded border-gray-300 text-secondaryblue focus:ring-secondaryblue">
                         </div>
-                        <label class="font-medium text-lg whitespace-nowrap" for="">Transparent transactions</label>
+                        <label class="font-medium text-lg whitespace-nowrap" for="">Full Transparency</label>
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="flex h-6 items-center">
@@ -27,7 +28,7 @@
                                 type="checkbox"
                                 class="h-4 w-4 rounded border-gray-300 text-secondaryblue focus:ring-secondaryblue">
                         </div>
-                        <label class="font-medium text-lg whitespace-nowrap" for="">Reduced risk of fraud</label>
+                        <label class="font-medium text-lg whitespace-nowrap" for="">Streamlined Solutions</label>
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="flex h-6 items-center">
@@ -35,7 +36,7 @@
                                 type="checkbox"
                                 class="h-4 w-4 rounded border-gray-300 text-secondaryblue focus:ring-secondaryblue">
                         </div>
-                        <label class="font-medium text-lg whitespace-nowrap" for="">Automated dispute resolution</label>
+                        <label class="font-medium text-lg whitespace-nowrap" for="">Quick Setup</label>
                     </div>
                 </div>
                 <form class="relative flex w-full" action="#" method="GET"><label for="search-field"
@@ -76,15 +77,10 @@
                 </div>
                 <div class="space-y-6">
                     <div class="h-1 bg-gradient-to-r from-secondaryblue to-secondarypink w-24 my-3  "></div>
-                    <h1 class="text-3xl md:text-5xl font-bold">Online Store</h1>
-                    <p class="text-md font-medium">Complete E-commerce Solution</p>
-                    <p class="text-md font-medium">
-                        Our platform offers a comprehensive e-commerce solution, covering every aspect you need for your
-                        online
-                        business. Build and showcase your brand effortlessly with features like coupons, customer feedback,
-                        analytics, and more.
-                        <br /><br />
-                        Now, you can have a stunning online store that perfectly aligns with the essence of your business."
+                    <h1 class="text-3xl md:text-5xl font-bold">Your One-Stop Online Store</h1>
+                    <p class="text-md font-medium">Elevate your business on Sorocommerce, the platform where ease meets
+                        innovation. Tailor
+                        your online shop with tools designed for visibility and growth:
                     </p>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         <div class="flex items-center gap-3">
@@ -93,7 +89,7 @@
                                     type="checkbox"
                                     class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                             </div>
-                            <label class="font-medium text-lg whitespace-nowrap" for="">Flexible Store Designs</label>
+                            <label class="font-medium text-lg whitespace-nowrap" for="">Customizable Storefronts</label>
                         </div>
                         <div class="flex items-center gap-3">
                             <div class="flex h-6 items-center">
@@ -101,7 +97,7 @@
                                     type="checkbox"
                                     class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                             </div>
-                            <label class="font-medium text-lg whitespace-nowrap" for="">Tailored Coupon Options</label>
+                            <label class="font-medium text-lg whitespace-nowrap" for="">Smart Analytics</label>
                         </div>
                         <div class="flex items-center gap-3">
                             <div class="flex h-6 items-center">
@@ -109,7 +105,7 @@
                                     type="checkbox"
                                     class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                             </div>
-                            <label class="font-medium text-lg whitespace-nowrap" for="">Powerful Analytics</label>
+                            <label class="font-medium text-lg whitespace-nowrap" for="">Financial Clarity</label>
                         </div>
                         <div class="flex items-center gap-3">
                             <div class="flex h-6 items-center">
@@ -117,7 +113,7 @@
                                     type="checkbox"
                                     class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                             </div>
-                            <label class="font-medium text-lg whitespace-nowrap" for="">Developer Assistance</label>
+                            <label class="font-medium text-lg whitespace-nowrap" for="">Subscription Ready</label>
                         </div>
                         <div class="flex items-center gap-3">
                             <div class="flex h-6 items-center">
@@ -141,16 +137,15 @@
 
                 <div class="space-y-6">
                     <div class="h-1 bg-gradient-to-r from-secondaryblue to-secondarypink w-24 my-3  "></div>
-                    <h1 class="text-3xl md:text-5xl font-bold">Our Payment Options </h1>
+                    <h1 class="text-3xl md:text-5xl font-bold">Flexible Payment Options </h1>
                     <p class="text-md font-medium">
-                        It is a long established fact that a reader will be distracted by the readable content of a page
-                        when
-                        looking at its layout.
-                        <br /><br />
-                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
-                        opposed
-                        to using 'Content here, content here. making it look like readable English. Many desktop publishing
-                        packages and web page editors now use Lorem Ipsum as their default model text.
+                        In Sorocommerce's marketplace, you have the freedom to transact how you want. Choose
+                        from a variety of payment methods, including Stellar-based cryptocurrencies like XLM, USDC,
+                        EURT, MOBI, and more to suit your convenience.
+                        <br><br>
+                         Our platform ensures every payment is
+                        secure, direct, and as fast as blockchain technology allows. Whether you're earning or hiring,
+                        Sorocommerce's payment system is designed with your financial ease in mind.
                     </p>
 
                 </div>
@@ -166,13 +161,11 @@
                 <div class="h-1 bg-gradient-to-r from-secondaryblue to-secondarypink w-24 my-3  "></div>
                 <h1 class="text-3xl md:text-5xl font-bold">Why Choose Our Payment Options </h1>
                 <p class="text-md font-medium">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when
-                    looking at its layout.
-                    <br /><br />
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                    to using 'Content here, content here. making it look like readable English.
-                    <br /><br />
-                    Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.
+                    Opt for security and simplicity with Sorocommerce's payment system. We exclusively use
+                    Stellar assets such as XLM and USDC, ensuring your transactions are not only fast but also
+                    transparent and low-cost. With us, you get the assurance of blockchain with the convenience
+                    of familiar currencies. Make the smart choice for your freelance payments with
+                    Sorocommerce.
                 </p>
 
             </div>
@@ -185,7 +178,8 @@
                 <h1 class="text-3xl md:text-5xl font-bold">Support Your Customers</h1>
 
                 <p class="text-md font-medium">
-                    Communicate and assist your customers in real time with our support integrations.
+                    Elevate your customer service with Sorocommerce’s real-time support. Address customer
+                    queries instantly, ensuring every interaction builds trust and satisfaction.
                 </p>
                 <div class="grid grid-cols-1 gap-4">
                     <div class="flex items-center gap-3">
@@ -194,7 +188,7 @@
                                 type="checkbox"
                                 class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                         </div>
-                        <label class="font-medium text-lg whitespace-nowrap" for="">Flexible Store Designs</label>
+                        <label class="font-medium text-lg whitespace-nowrap" for="">Instant Assistance</label>
                     </div>
                     <div class="flex items-center gap-3">
                         <div class="flex h-6 items-center">
@@ -202,7 +196,7 @@
                                 type="checkbox"
                                 class="h-4 w-4 rounded border-gray-300 text-secondarygreen focus:ring-secondarygreen">
                         </div>
-                        <label class="font-medium text-lg whitespace-nowrap" for="">Powerful Analytics</label>
+                        <label class="font-medium text-lg whitespace-nowrap" for="">Reliable Support</label>
                     </div>
 
 

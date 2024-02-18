@@ -42,7 +42,7 @@
                     class="bg-white block w-full rounded-md border-0 px-3 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
                     placeholder="johnsmith@gmail.com" />
                 </div>
-                <p class="text-gray-400 mt-2">We’ll use this address to contact you.</p>
+                
               </div>
             </div>
             <div class="md:col-span-2">
@@ -118,15 +118,15 @@
                 Currency</label>
               <input type="text" name="name" id="name"
                 class="bg-white block w-full rounded-md border-0 px-3 py-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-inset focus:ring-primary-600 sm:text-sm sm:leading-6"
-                placeholder="USD" />
+                placeholder="XLM" />
             </div>
             <p class="font-semibold text-lg text-gray-900 mt-6">Don’t have wallet?</p>
             <div class="font-normal text-md mt-2 text-gray-800">
-              How to create wallet? <a href="" class="text-primary font-semibold">Click here</a>
+              <a href="" class="text-primary font-semibold">Click here</a>
             </div>
           </div>
           <div class="border rounded-xl p-4">
-            <p class="font-bold text-lg mb-6 text-gray-900 text-center max-w-xs mx-auto">Please Connect Your Account to Wallet</p>
+            <p class="font-bold text-lg mb-6 text-gray-900 text-center max-w-xs mx-auto"></p>
             <div class="relative">
               <label for=""
                 class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-600">Connect your Frighter Wallet</label>

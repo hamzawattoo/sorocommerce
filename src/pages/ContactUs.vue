@@ -5,8 +5,6 @@
             <div class=" max-w-3xl mr-auto sm:mx-auto px-12 text-center my-5 md:my-20 px-6 md:px-6 lg:px-10">
                 <div class="h-1 bg-gradient-to-r from-secondaryblue to-secondarypink w-24 my-3 mx-auto "></div>
                 <h1 class="text-3xl md:text-5xl font-bold">Contact Us</h1>
-                <p class="text-gray-500 text-lg font-medium">It is a long established fact that a reader will be distracted
-                </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto my-20">
                 <img class="h-[500px] object-contain" :src="herosection9" alt="">

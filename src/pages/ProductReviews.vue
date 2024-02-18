@@ -44,7 +44,7 @@
                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                             alt="" />
                         <div class="flex flex-col ml-4">
-                            <span class="text-gray-400 text-xs font-medium">Welcom</span>
+                            
                             <span class="hidden lg:flex lg:items-center gap-4">
                                 <span class="text-sm font-semibold text-gray-900" aria-hidden="true">John
                                     Smith</span>
