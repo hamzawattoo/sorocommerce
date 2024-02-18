@@ -12,15 +12,15 @@
         </span>
         <div class="hidden lg:flex items-center justify-between flex-1">
             <router-link to="/dashboard" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4">Explore</router-link>
-            <router-link to="/about" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">About Us</router-link>
-            <router-link to="/contact_us" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4" href="">Contact Us </router-link>
+            <router-link to="/about" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4 whitespace-nowrap" href="">About Us</router-link>
+            <router-link to="/contact_us" class="text-xl border-b-4 rounded-sm border-transparent hover:border-primary px-4 whitespace-nowrap" href="">Contact Us </router-link>
             <div class="flex items-center justify-between gap-x-4">
                 <router-link to="signin"
-                    class="whitespace-nowrap text-center text-black shadow-lg font-semibold text-base bg-white py-3  rounded-xl flex items-center justify-center gap-x-3 px-16 hover:bg-gradient-to-r from-secondaryblue to-secondarypink  hover:text-white">
+                    class="whitespace-nowrap text-center text-black shadow-lg font-semibold text-base bg-white py-3  rounded-xl flex items-center justify-center gap-x-3 px-8 xl:px-16 hover:bg-gradient-to-r from-secondaryblue to-secondarypink  hover:text-white">
                     Sign In
                 </router-link >
                 <router-link to="/signup"
-                    class="whitespace-nowrap text-center text-white font-semibold text-base bg-gradient-to-r from-secondaryblue to-secondarypink hover:opacity-75 py-3  rounded-xl flex items-center justify-center gap-x-3 px-16">
+                    class="whitespace-nowrap text-center text-white font-semibold text-base bg-gradient-to-r from-secondaryblue to-secondarypink hover:opacity-75 py-3  rounded-xl flex items-center justify-center gap-x-3 px-8 xl:px-16">
                     Sign Up
                 </router-link>
             </div>
